@@ -1,3 +1,4 @@
+import React from 'react'
 import '../stylesheets/About.css'
 import myself from '../images/ben.png'
 import resume from '../images/Resume.pdf'
