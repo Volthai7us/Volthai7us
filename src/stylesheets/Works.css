@@ -1,0 +1,107 @@
+:root {
+    --shiftAmount: 0;
+}
+
+.WorksSection {
+    display: flex;
+    flex-direction: column;
+    padding: 2rem 5rem 2rem 5rem;
+}
+
+.WorksHeader {
+    display: flex;
+    flex-direction: column;
+    text-align: left;
+    font-size: 2.5em;
+    width: 30vw;
+    color: #151515;
+    font-weight: 300;
+    line-height: 2em;
+}
+
+.WorksHeader > h1 {
+    margin-bottom: 2rem;
+}
+
+.Fields {
+    display: flex;
+    flex-direction: column;
+}
+
+.Fields > span {
+    height: 10vh;
+}
+
+.Fields > span:hover {
+    cursor: pointer;
+}
+
+.WorksContainer {
+    width: 60vw;
+    margin: 0 auto 0 18rem;
+    display: flex;
+    flex-direction: column;
+}
+
+.WorksBody {
+    padding: 3rem;
+    width: 100%;
+    min-height: 30vh;
+    max-height: 30vh;
+    text-align: center;
+    overflow: hidden;
+    border-radius: 2rem;
+    color: #424242;
+    transform: translateY(var(--shiftAmount));
+    transition: translateY 1s ease-out;
+}
+
+.WorksText {
+    display: flex;
+    flex-direction: column;
+    font-size: 1.5em;
+    justify-content: space-between;
+    margin-bottom: 4rem;
+}
+
+.WorksFooter {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    margin: auto;
+}
+
+.WorksFooterRight {
+    margin-left: 10rem;
+}
+
+.ProjectId {
+    font-size: 5em;
+    font-weight: 300;
+}
+
+.WorksFooterLeft {
+    margin-right: 10rem;
+}
+
+.OnHover {
+    opacity: 1;
+    transition: opacity 1s ease-out;
+}
+
+.OffHover {
+    opacity: 0.1;
+    transition: opacity 1s ease-out;
+}
+
+a:link {
+    color: #9448bc;
+    background-color: transparent;
+    text-decoration: none;
+}
+
+a:visited {
+    color: #9448bc;
+    background-color: transparent;
+    text-decoration: none;
+}

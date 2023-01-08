@@ -1,0 +1,94 @@
+:root {
+    --sideWidth: 15vw;
+}
+
+* {
+    margin: 0;
+    padding: 0;
+}
+
+.Intro {
+    display: grid;
+    grid-template-columns: 1fr 1fr 1fr;
+    width: 100vw;
+    height: 100vh;
+    overflow: hidden;
+}
+
+.IntroChild {
+    overflow: hidden;
+    width: 0rem;
+    height: 0rem;
+    transition: all 1s;
+}
+
+.IntroChild:nth-child(1) {
+    background-color: #b0a0ba;
+}
+
+.IntroChild:nth-child(2) {
+    background-color: #cfb0a0;
+}
+
+.IntroChild:nth-child(3) {
+    background-color: #ccc0ba;
+}
+
+.IntroChild.Item {
+    height: 100vh;
+    width: 33.33vw;
+}
+
+.IntroChild.Main {
+    position: absolute;
+    transition: all 1s;
+    width: calc(100vw - var(--sideWidth));
+    height: 100vh;
+}
+
+.IntroChild.Main > span {
+    color: #000;
+    font-size: 5em;
+    margin: 2rem 1rem;
+}
+
+.IntroChild.Side1 {
+    position: absolute;
+    transition: all 1s;
+    transform: translate(calc(100vw - var(--sideWidth)), 0vh);
+    width: var(--sideWidth);
+    height: 50vh;
+    font-size: 0.6em;
+}
+
+.IntroChild.Side2 {
+    position: absolute;
+    transition: all 1s;
+    transform: translate(calc(100vw - var(--sideWidth)), 50vh);
+    width: var(--sideWidth);
+    height: 50vh;
+    font-size: 0.6em;
+}
+
+.LetterContainer {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    width: 5rem;
+    text-align: center;
+    margin: 0 auto;
+    height: 100%;
+    font-size: 3vw;
+    line-height: 0.8em;
+}
+
+.Item > .LetterContainer {
+    font-size: 5vw;
+}
+
+.LetterContainer > * {
+    transition: all 4s;
+    display: block;
+    margin: 0 auto;
+}

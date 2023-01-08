@@ -1,0 +1,12 @@
+.Blog {
+    display: flex;
+    width: 85vw;
+    height: 100vh;
+}
+
+.Blog > h1 {
+    font-size: 5rem;
+    font-weight: 200;
+    margin: auto;
+    padding: 0;
+}
