@@ -53,6 +53,7 @@
 }
 
 .IntroChild.Side1 {
+    cursor: pointer;
     position: absolute;
     transition: all 1s;
     transform: translate(calc(100vw - var(--sideWidth)), 0vh);
@@ -62,6 +63,7 @@
 }
 
 .IntroChild.Side2 {
+    cursor: pointer;
     position: absolute;
     transition: all 1s;
     transform: translate(calc(100vw - var(--sideWidth)), 50vh);
@@ -71,6 +73,7 @@
 }
 
 .LetterContainer {
+    cursor: pointer;
     display: flex;
     flex-direction: column;
     justify-content: center;
