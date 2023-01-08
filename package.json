@@ -1,7 +1,7 @@
 {
     "name": "portfolio",
     "homepage": "https://https://volthai7us.github.io/Volthai7us/",
-    "private": true,
+    "private": false,
     "version": "0.0.0",
     "type": "module",
     "scripts": {
