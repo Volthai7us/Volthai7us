@@ -1,23 +1,16 @@
 .About {
-    padding: 4rem;
-}
-
-.AboutSection {
-    display: flex;
-    flex-direction: column;
-    margin: 0 auto;
+    padding: 4vw;
 }
 
 .AboutBody {
     display: flex;
     flex-direction: row;
-    margin: 0 auto;
 }
 
 .AboutHeader {
-    padding-left: 2rem;
-    margin-bottom: 2rem;
-    width: 100%;
+    margin-left: 2vw;
+    margin-bottom: 2vh;
+    margin-top: 2vh;
     font-size: 3vw;
     color: #151515;
     font-weight: 300;
@@ -30,59 +23,96 @@
     flex-direction: row;
 }
 
-.ResumeGithub {
+.FooterSection {
     display: flex;
     flex-direction: row;
     font-size: 2.5em;
     background-color: #151515;
     color: #ccc0ba;
     width: 40%;
-    margin: 4rem auto 0 2rem;
+    height: 6vh;
+    margin: 4vw auto 0 2vw;
     justify-content: center;
 }
 
-.ResumeGithub > a {
-    font-size: 1.2em;
-    margin: 2rem;
-    cursor: pointer;
-}
-
-.ContactLinks {
-    display: flex;
-    flex-direction: row;
-    font-size: 2.5em;
-    background-color: #151515;
-    color: #ccc0ba;
-    width: 40%;
-    margin: 4rem auto 0 2rem;
-    justify-content: center;
-}
-
-.ContactLinks > a {
-    font-size: 1.2em;
-    margin: 2rem;
+.FooterSection > a {
+    font-size: 3vw;
+    margin: auto;
     cursor: pointer;
 }
 
 .AboutText {
     background-color: #151515;
-    padding: 2rem;
+    padding: 2vh;
     width: 40%;
-    height: 40vh;
     font-size: 1.3vw;
     color: #ccc0ba;
     font-weight: 300;
     line-height: 1.5em;
     text-align: left;
-    margin: 2rem auto 0 2rem;
+    margin: 2vw auto 0 2vw;
 }
 
 .AboutText > h1 {
     color: #a63d40;
-    margin: 0 auto 2rem 0;
+    margin: 0 auto 2vh 0;
 }
 
 .AboutImage {
-    margin: 2rem auto 0 0rem;
-    height: 40vh;
+    display: flex;
+    margin: 0 auto;
+    width: 40%;
+    margin: 0 auto 0 2vw;
+}
+
+.Image {
+    width: 100%;
+    height: 100%;
+}
+
+@media only screen and (max-width: 768px) {
+    .AboutImage {
+        display: flex;
+        margin: 0 auto;
+        width: 100%;
+        margin: 0 auto 0 2vw;
+    }
+
+    .Image {
+        width: 50%;
+        margin: 0 auto;
+    }
+
+    .AboutHeader {
+        font-size: 5vw;
+        padding-left: 6vw;
+    }
+
+    .AboutText {
+        background-color: #151515;
+        padding: 2vw;
+        width: 80%;
+        min-height: 20vh;
+        font-size: 3vw;
+        color: #ccc0ba;
+        font-weight: 300;
+        line-height: 1.5em;
+        text-align: left;
+        margin: 0 auto;
+    }
+
+    .AboutBody {
+        display: flex;
+        flex-direction: column;
+    }
+
+    .FooterSection {
+        height: 5vh;
+    }
+
+    .FooterSection > a {
+        font-size: 0.5em;
+        margin: 2vw;
+        cursor: pointer;
+    }
 }

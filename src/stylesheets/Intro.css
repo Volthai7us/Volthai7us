@@ -1,5 +1,6 @@
 :root {
     --sideWidth: 15vw;
+    --sideHeight: 15vh;
 }
 
 * {
@@ -94,4 +95,51 @@
     transition: all 4s;
     display: block;
     margin: 0 auto;
+}
+
+@media only screen and (max-width: 1000px) {
+    /* For mobile phones: */
+    .Intro {
+        display: flex;
+        flex-direction: column;
+        overflow: hidden;
+    }
+
+    .IntroChild.Item {
+        width: 100vw;
+        height: 33.33vh;
+    }
+
+    .IntroChild.Main {
+        position: absolute;
+        transition: all 1s;
+        width: 100vw;
+        height: calc(100vh - var(--sideHeight));
+        transform: translate(0vw, var(--sideHeight));
+    }
+
+    .IntroChild.Side1 {
+        cursor: pointer;
+        position: absolute;
+        transition: all 1s;
+        transform: translate(0vw, 0vh);
+        height: var(--sideHeight);
+        width: 50vw;
+        font-size: 0.6em;
+    }
+
+    .IntroChild.Side2 {
+        cursor: pointer;
+        position: absolute;
+        transition: all 1s;
+        transform: translate(50vw, 0vh);
+        height: var(--sideHeight);
+        width: 50vw;
+        font-size: 0.6em;
+    }
+
+    .LetterContainer {
+        font-size: 5vw;
+        flex-direction: row;
+    }
 }

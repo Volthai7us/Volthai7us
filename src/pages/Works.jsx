@@ -6,14 +6,29 @@ export default function Works() {
     const [selectedField, setSelectedField] = React.useState('CG')
 
     const mouseMove = (e) => {
-        var rect = e.target.parentElement.getBoundingClientRect()
-        var y = e.clientY - rect.top
-        const height = rect.height
-        const percent = y / height
-        const rect2 = document.getElementsByClassName('WorksContainer')[0].getBoundingClientRect()
-        const height2 = rect2.height
+        if (screen.width < 1000) {
+            if (e.target.parentElement.className !== 'Fields') return
+            var rect = e.target.parentElement.getBoundingClientRect()
+            var x = e.clientX - rect.left
+            console.log(x)
+            console.log(rect.width)
+            const width = rect.width
+            const percent = x / width
+            console.log(percent)
+            const rect2 = document.getElementsByClassName('WorksContainer')[0].getBoundingClientRect()
+            const height2 = rect2.height
 
-        document.getElementsByClassName('Works')[0].style.setProperty('--shiftAmount', `${-percent * height2}px`)
+            document.getElementsByClassName('Works')[0].style.setProperty('--shiftAmount', `${rect2.top / 2 + -percent * height2}px`)
+        } else {
+            var rect = e.target.parentElement.getBoundingClientRect()
+            var y = e.clientY - rect.top
+            const height = rect.height
+            const percent = y / height
+            const rect2 = document.getElementsByClassName('WorksContainer')[0].getBoundingClientRect()
+            const height2 = rect2.height
+
+            document.getElementsByClassName('Works')[0].style.setProperty('--shiftAmount', `${-percent * height2}px`)
+        }
     }
 
     const fieldMouseEnter = (field) => {
