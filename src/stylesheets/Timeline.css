@@ -1,0 +1,72 @@
+.root {
+    --sideWidth: 15vw;
+}
+
+.Contact {
+    display: flex;
+    position: relative;
+}
+
+.Line1 {
+    position: absolute;
+    left: calc((100vw - var(--sideWidth)) / 2);
+    top: 0;
+    border-left: 3px solid #120309;
+    height: 100vh;
+}
+
+.Year {
+    position: absolute;
+    left: calc((100vw - var(--sideWidth)) / 2 - 7rem);
+    top: 1rem;
+    font-size: 3rem;
+    font-weight: 700;
+}
+
+.Left {
+    transform: translateX(-100%);
+}
+
+.Right {
+    transform: translateX(100%);
+}
+
+.Left1 {
+    transform: translateY(100%);
+}
+
+.Right1 {
+    transform: translateX(140%) translateY(200%);
+}
+
+.Left2 {
+    transform: translateY(300%);
+}
+
+.Right2 {
+    transform: translateX(140%) translateY(400%);
+}
+
+.Left3 {
+    transform: translateY(500%);
+}
+
+.Right3 {
+    transform: translateX(140%) translateY(600%);
+}
+
+.Left4 {
+    transform: translateY(700%);
+}
+
+.Right4 {
+    transform: translateX(140%) translateY(800%);
+}
+
+.Left5 {
+    transform: translateY(900%);
+}
+
+.Right5 {
+    transform: translateX(140%) translateY(1000%);
+}

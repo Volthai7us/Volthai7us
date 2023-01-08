@@ -1,0 +1,88 @@
+.About {
+    padding: 4rem;
+}
+
+.AboutSection {
+    display: flex;
+    flex-direction: column;
+    margin: 0 auto;
+}
+
+.AboutBody {
+    display: flex;
+    flex-direction: row;
+    margin: 0 auto;
+}
+
+.AboutHeader {
+    padding-left: 2rem;
+    margin-bottom: 2rem;
+    width: 100%;
+    font-size: 3vw;
+    color: #151515;
+    font-weight: 300;
+    line-height: 2em;
+    text-align: left;
+}
+
+.AboutFooter {
+    display: flex;
+    flex-direction: row;
+}
+
+.ResumeGithub {
+    display: flex;
+    flex-direction: row;
+    font-size: 2.5em;
+    background-color: #151515;
+    color: #ccc0ba;
+    width: 40%;
+    margin: 4rem auto 0 2rem;
+    justify-content: center;
+}
+
+.ResumeGithub > a {
+    font-size: 1.2em;
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.ContactLinks {
+    display: flex;
+    flex-direction: row;
+    font-size: 2.5em;
+    background-color: #151515;
+    color: #ccc0ba;
+    width: 40%;
+    margin: 4rem auto 0 2rem;
+    justify-content: center;
+}
+
+.ContactLinks > a {
+    font-size: 1.2em;
+    margin: 2rem;
+    cursor: pointer;
+}
+
+.AboutText {
+    background-color: #151515;
+    padding: 2rem;
+    width: 40%;
+    height: 40vh;
+    font-size: 1.3vw;
+    color: #ccc0ba;
+    font-weight: 300;
+    line-height: 1.5em;
+    text-align: left;
+    margin: 2rem auto 0 2rem;
+}
+
+.AboutText > h1 {
+    color: #a63d40;
+    margin: 0 auto 2rem 0;
+}
+
+.AboutImage {
+    margin: 2rem auto 0 0rem;
+    height: 40vh;
+}
