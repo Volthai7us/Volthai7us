@@ -1,6 +1,5 @@
 import React from 'react'
 import '../stylesheets/Works.css'
-import nft_lending from '../images/lending.png'
 
 export default function Works() {
     const [selectedField, setSelectedField] = React.useState('CG')
